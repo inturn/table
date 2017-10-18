@@ -334,10 +334,10 @@ export default class Table extends React.Component {
           ? rowClassName
           : rowClassName(record, i, indent);
 
-      const onHoverProps = {};
-      if (this.columnManager.isAnyColumnsFixed()) {
-        onHoverProps.onHover = this.handleRowHover;
-      }
+      // const onHoverProps = {};
+      // if (this.columnManager.isAnyColumnsFixed()) {
+      //   onHoverProps.onHover = this.handleRowHover;
+      // }
 
       const height = (fixed && fixedColumnsBodyRowsHeight[i]) ?
         fixedColumnsBodyRowsHeight[i] : null;
@@ -377,7 +377,7 @@ export default class Table extends React.Component {
           onRowMouseEnter={onRowMouseEnter}
           onRowMouseLeave={onRowMouseLeave}
           height={height}
-          {...onHoverProps}
+          // {...onHoverProps}
           key={key}
           hoverKey={key}
           ref={rowRef(record, i, indent)}

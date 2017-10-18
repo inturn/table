@@ -60,7 +60,7 @@ export default class TableRow extends React.Component {
     this.pushHeight();
     this.pullHeight();
     this.unsubscribe = store.subscribe(() => {
-      this.setHover();
+      // this.setHover();
       this.pullHeight();
     });
   }
